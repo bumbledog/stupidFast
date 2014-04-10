@@ -115,7 +115,7 @@ void XMLParser::printContent(int place){
 	string content = _XML.substr(place, iter - place);
 	//prints the content out
 	for (int iter = content.length() - 1; iter >= 0; iter--){
-		if (content[iter] <96 || content[iter]> 127)
+		if (content[iter] <97 || content[iter]> 122)
 			content[iter] = ' ';
 	}
 	_output += content + "\n";
